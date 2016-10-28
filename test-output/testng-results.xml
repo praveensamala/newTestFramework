@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="432" started-at="2016-10-19T03:28:06Z" finished-at="2016-10-19T03:28:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="432" started-at="2016-10-19T03:28:06Z" finished-at="2016-10-19T03:28:07Z">
+      <class name="com.sample.frameworksetup.driver">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="beforeTest" is-config="true" duration-ms="6" started-at="2016-10-18T23:28:06Z" finished-at="2016-10-18T23:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:06Z" finished-at="2016-10-18T23:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="looptestcase(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="looptestcase" duration-ms="4" started-at="2016-10-18T23:28:06Z" data-provider="SearchProvider" finished-at="2016-10-18T23:28:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Case details1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- looptestcase -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:06Z" finished-at="2016-10-18T23:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:06Z" finished-at="2016-10-18T23:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:06Z" finished-at="2016-10-18T23:28:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="looptestcase(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="looptestcase" duration-ms="0" started-at="2016-10-18T23:28:06Z" data-provider="SearchProvider" finished-at="2016-10-18T23:28:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Case details2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- looptestcase -->
+        <test-method status="PASS" signature="looptestcase(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="looptestcase" duration-ms="1" started-at="2016-10-18T23:28:07Z" data-provider="SearchProvider" finished-at="2016-10-18T23:28:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test Case details2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- looptestcase -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:07Z" finished-at="2016-10-18T23:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:07Z" finished-at="2016-10-18T23:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testing2()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="testing2" duration-ms="1" started-at="2016-10-18T23:28:07Z" finished-at="2016-10-18T23:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:07Z" finished-at="2016-10-18T23:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:07Z" finished-at="2016-10-18T23:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:07Z" finished-at="2016-10-18T23:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:07Z" finished-at="2016-10-18T23:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.sample.frameworksetup.driver@26be92ad]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-10-18T23:28:07Z" finished-at="2016-10-18T23:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.sample.frameworksetup.driver -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
