@@ -31,7 +31,7 @@ public class driver
 	@DataProvider(name="SearchProvider")
 	public String[][] getDataFromDataprovider() throws IOException
 	{
-		String filePath = "C:\\Selenium Workspace\\newTestFramework\\";
+		String filePath = "C:\\Users\\spk19\\git\\newTestFramework\\";
 		String fileName = "TestData.xlsx";
 		String sheetName = "TestCases";
 		File file =    new File(filePath+fileName);
@@ -65,7 +65,7 @@ public class driver
 		return testcases;
 	  }
 	
-	  @Test(dataProvider="SearchProvider")
+	  @Test(dataProvider="SearchProvider", enabled=false)
 	  public void looptestcase(String testCaseNo, String testCaseDescription, String testCaseRunSel, String testCaseBrowser) throws InterruptedException
 	  {
 		  boolean testresult = false;
@@ -89,8 +89,7 @@ public class driver
 		  }
 	  }
 	  
-	  
-	  @Test (enabled=true)
+	  @Test (enabled=false)
 	  public void testing2()
 	  {
 		  System.out.println("in testing2");
