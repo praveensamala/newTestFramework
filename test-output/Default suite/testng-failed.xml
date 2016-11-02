@@ -3,15 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.sample.frameworksetup.driver">
+      <class name="com.sample.frameworksetup.driverProgram">
         <methods>
-          <include name="looptestcase"/>
-          <include name="beforeClass"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="setupChromeDriver"/>
           <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="testing4"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.sample.frameworksetup.driver -->
+      </class> <!-- com.sample.frameworksetup.driverProgram -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
