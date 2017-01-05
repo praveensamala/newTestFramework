@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -16,8 +17,10 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -39,7 +42,8 @@ public class driverProgram
 	@DataProvider(name="SearchProvider")
 	public String[][] getDataFromDataprovider() throws IOException
 	{
-		String filePath = "C:\\Users\\spk19\\git\\newTestFramework\\";
+		String filePath = System.getProperty("user.dir");
+		System.out.println("user directory : "+System.getProperty("user.dir"));
 		String fileName = "TestData.xlsx";
 		String sheetName = "TestCases";
 		File file =    new File(filePath+fileName);
@@ -47,12 +51,10 @@ public class driverProgram
 		Workbook workbook = null;
 		String fileExt = fileName.substring(fileName.indexOf("."));
 
-		if(fileExt.equals(".xlsx"))
-		{
+		if(fileExt.equals(".xlsx"))	{
 			workbook = new XSSFWorkbook(inputStream);
 		}
-		else if(fileExt.equals(".xls"))
-		{
+		else if(fileExt.equals(".xls"))	{
 		    workbook = new HSSFWorkbook(inputStream);
 		}
 		
@@ -79,51 +81,52 @@ public class driverProgram
 		  boolean testresult = false;
 		  testExecution testExecution = new testExecution();
 		  
-		  System.out.println("in testing1");
+		  System.out.println("Thread="+Thread.currentThread().getName()+"in testing1");
 		  
 		  //System.out.println("testCase : "+testCaseNo+", testCaseDescription : "+testCaseDescription+", testCaseRunSel : "+testCaseRunSel+", testCaseBrowser : "+testCaseBrowser);
 		  if (testCaseRunSel.equalsIgnoreCase("Yes"))
 		  {  
 			  testresult = testExecution.executeTestCase(testCaseNo, testCaseDescription, testCaseRunSel, testCaseBrowser);
 			  if (testresult){
-				  System.out.println(testCaseNo+" is pass");
+				  System.out.println("Thread="+Thread.currentThread().getName()+testCaseNo+" is pass");
 			  }
 			  else{
-				  System.out.println(testCaseNo+" is failed");
+				  System.out.println("Thread="+Thread.currentThread().getName()+testCaseNo+" is failed");
 			  }
 		  }
 		  else{
-			  System.out.println(testCaseNo+" is skipped");
+			  System.out.println("Thread="+Thread.currentThread().getName()+testCaseNo+" is skipped");
 		  }
 	  }
 	  
 	  @Test (enabled=false)
 	  public void testing2()
 	  {
-		  System.out.println("in testing2");
+		  System.out.println("Thread="+Thread.currentThread().getName()+"in testing2");
+		  
 		  propertyFile pf = new propertyFile();
 		  pf.loadPropertyFile();
-		  //System.out.println("urllink : "+pf.getPropertyValue("urllink"));
+		  System.out.println("urllink : "+pf.getPropertyValue("urllink"));
 	  }
 	  
-	  @Test (enabled=true)
+	  @Test (enabled=false)
 	  public void testing3()
 	  {
-		  System.out.println("\nin testing3");
+		  System.out.println("Thread="+Thread.currentThread().getName()+"in testing3");
 		  
-		  driver.get("https://www.yahoo.com");
+		  /*driver.get("https://www.yahoo.com");
 		  screenShots screenshots = new screenShots();
 		  screenshots.getScreenShot("testing3", driver);
-		  screenshots.logScreenShot("testing3", driver);
+		  screenshots.logScreenShot("testing3", driver);*/
 		  //Reporter.setCurrentTestResult(null);
 	  }
 	  
-	  @Test (enabled=true)
+	  @Test (enabled=false)
 	  public void testing4()
 	  {
-		  System.out.println("\nin testing4");
+		  System.out.println("Thread="+Thread.currentThread().getName()+"in testing4");
 		  
-		  driver.get("https://www.msn.com");
+		  /*driver.get("https://www.msn.com");
 		  screenShots screenshots = new screenShots();
 		  screenshots.getScreenShot("testing41", driver);
 		  screenshots.logScreenShot("testing41", driver);
@@ -132,10 +135,20 @@ public class driverProgram
 		  jse.executeScript("scroll(0, 250);");
 		  
 		  screenshots.getScreenShot("testing42", driver);
-		  screenshots.logScreenShot("testing42", driver);
+		  screenshots.logScreenShot("testing42", driver);*/
 		  //Reporter.setCurrentTestResult(null);
 	  }
 	  
+	  @Test (enabled=true)
+	  public void countTestCases()
+	  {
+			driver.get("http://tdm-win2008r2-b.wdw-ilab.wdw.disney.com/TDOD/public/gdo/row/APPQA_AuthorizePayment");
+			List<WebElement> rowslist = driver.findElements(By.tagName("tr"));
+			System.out.println("\nrowscount : "+rowslist.size());
+			for (WebElement x:rowslist) {
+				//System.out.println("row : "+x.getText());
+			}
+	  }
 	  
 	  @BeforeSuite
 	  public void beforeSuite() {

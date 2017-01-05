@@ -12,8 +12,8 @@ public class propertyFile
 	
 	public void loadPropertyFile()
 	{
-		Properties prop = new Properties();
-		String propfilename = "/config.properties";
+		prop = new Properties();
+		String propfilename = "config.properties";
 		InputStream inputstream = getClass().getClassLoader().getResourceAsStream(propfilename);
 		//InputStream inputstream = getClass().getResourceAsStream("C:\\Selenium Workspace\\newTestFramework\\resources\\config.properties");
 		if (inputstream != null)
