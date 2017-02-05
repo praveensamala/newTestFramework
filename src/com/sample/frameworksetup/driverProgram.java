@@ -142,7 +142,7 @@ public class driverProgram
 	  @Test (enabled=true)
 	  public void countTestCases()
 	  {
-			driver.get("http://tdm-win2008r2-b.wdw-ilab.wdw.disney.com/TDOD/public/gdo/row/APPQA_AuthorizePayment");
+			driver.get("http://fldcvpswa6204.wdw.disney.com/TDOD/public/gdo/row/APPQA_AuthorizePayment");
 			List<WebElement> rowslist = driver.findElements(By.tagName("tr"));
 			System.out.println("\nrowscount : "+rowslist.size());
 			for (WebElement x:rowslist) {
