@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestSuite" thread-count="3" >
-	<parameter name="author" value="tester" />
-	<parameter name="searchKey" value="India" />
-	<test name="testGuru">
-		<parameter name="searchKey" value="UK" />
+
+<suite name="TestSuite" thread-count="1" >
+	<parameter name="environment" value="NA" />
+	<parameter name="runenvironment" value="NA" />
+	<parameter name="browser" value="firefox" />
+	
+	<test name="test01">
 		<classes>
-			<class name="testngloop.sample"></class>
+			<class name="com.sample.frameworksetup.driverProgram"></class>
 		</classes>
 	</test>
 </suite>

@@ -22,6 +22,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterMethod;
@@ -37,7 +39,8 @@ import org.testng.annotations.AfterTest;
 public class driverProgram
 {
 	int i = 0;
-	public static WebDriver driver = new ChromeDriver();
+	public WebDriver driver = null;
+	String browser = null;
 	
 	@DataProvider(name="SearchProvider")
 	public String[][] getDataFromDataprovider() throws IOException
@@ -82,8 +85,8 @@ public class driverProgram
 		  testExecution testExecution = new testExecution();
 		  
 		  System.out.println("Thread="+Thread.currentThread().getName()+"in testing1");
-		  
 		  //System.out.println("testCase : "+testCaseNo+", testCaseDescription : "+testCaseDescription+", testCaseRunSel : "+testCaseRunSel+", testCaseBrowser : "+testCaseBrowser);
+		  
 		  if (testCaseRunSel.equalsIgnoreCase("Yes"))
 		  {  
 			  testresult = testExecution.executeTestCase(testCaseNo, testCaseDescription, testCaseRunSel, testCaseBrowser);
@@ -142,17 +145,34 @@ public class driverProgram
 	  @Test (enabled=true)
 	  public void countTestCases()
 	  {
-			driver.get("http://fldcvpswa6204.wdw.disney.com/TDOD/public/gdo/row/APPQA_AuthorizePayment");
-			List<WebElement> rowslist = driver.findElements(By.tagName("tr"));
-			System.out.println("\nrowscount : "+rowslist.size());
-			for (WebElement x:rowslist) {
-				//System.out.println("row : "+x.getText());
-			}
+		  System.out.println("browser : "+browser);
+		  driver.get("http://fldcvpswa6204.wdw.disney.com/TDOD/public/gdo/row/APPQA_AuthorizePayment");
+		  List<WebElement> rowslist = driver.findElements(By.tagName("tr"));
+		  System.out.println("\nrowscount : "+rowslist.size());
+		  /*for (WebElement x:rowslist) {
+			System.out.println("row : "+x.getText());
+		  }*/
 	  }
 	  
 	  @BeforeSuite
-	  public void beforeSuite() {
-		  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver.exe");
+	  @Parameters({"environment", "runenvironment", "browser"})
+	  public void beforeSuite(String environment, String runenvironment, String browser) {
+		  System.out.println("received environment : "+environment);
+		  System.out.println("received runenvironment : "+runenvironment);
+		  System.out.println("received browser : "+browser);
+		  this.browser = browser;
+		  if (browser.equalsIgnoreCase("chrome")) {
+			  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver.exe");
+			  driver = new ChromeDriver();
+		  }
+		  else if (browser.equalsIgnoreCase("firefox")) {
+			  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//geckodriver.exe");
+			  driver =new FirefoxDriver();
+		  }
+		  else {
+			  System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"//IEDriverServer.exe");
+			  driver = new InternetExplorerDriver();
+		  }
 	  }
 	  
 	  @AfterSuite
