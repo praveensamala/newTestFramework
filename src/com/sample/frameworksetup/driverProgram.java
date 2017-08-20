@@ -2,7 +2,7 @@ package com.sample.frameworksetup;
 
 import org.testng.annotations.Test;
 
-import junit.framework.Assert;
+//import junit.framework.Assert;
 
 import java.io.File;
 import java.io.FileInputStream;
