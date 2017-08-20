@@ -13,32 +13,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/client-combined-3.0.0-nodeps.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/cglib-nodep-3.2.4.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/commons-exec-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/guava-19.0.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/hamcrest-core-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/hamcrest-library-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/httpclient-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/httpcore-4.4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/httpmime-4.5.2.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/jna-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/jna-platform-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-java-3.0.0/lib/phantomjsdriver-1.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-examples-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-excelant-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-ooxml-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-ooxml-schemas-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-scratchpad-3.16-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/lib/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/lib/commons-collections4-4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/lib/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/lib/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="C:/Selenium libraries/selenium-server-standalone-3.0.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

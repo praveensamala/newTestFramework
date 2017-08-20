@@ -5,12 +5,13 @@
     <classes>
       <class name="com.sample.frameworksetup.driverProgram">
         <methods>
-          <include name="setupChromeDriver"/>
           <include name="afterClass"/>
+          <include name="beforeSuite"/>
           <include name="afterTest"/>
-          <include name="testing4"/>
+          <include name="countTestCases"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="afterSuite"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>

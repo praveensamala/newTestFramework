@@ -1,5 +1,5 @@
-/target/*
-/screenshots/*
-/test-output/*
-
-
+target/
+screenshots/
+test-output/
+*.classpath
+*.gitignore

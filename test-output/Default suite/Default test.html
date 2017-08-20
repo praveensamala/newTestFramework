@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 30 10:29:38 EDT 2016</td>
+<td>Started on:</td><td>Sun Aug 20 11:52:03 EDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11899 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (26 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,38 +67,142 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.sample.frameworksetup.driverProgram.testing3()'><b>testing3</b><br>Test class: com.sample.frameworksetup.driverProgram<br/>
-<a href="#Output-1055096410" onClick='toggleBox("Output-1055096410", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1055096410" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1055096410">
-<br> <img src=C:\Users\spk19\git\newTestFramework\screenshots\testing3.png /> <br><br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>com.sample.frameworksetup.driverProgram@51dcb805</td></tr>
+<td title='com.sample.frameworksetup.driverProgram.beforeSuite()'><b>beforeSuite</b><br>Test class: com.sample.frameworksetup.driverProgram</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
+in C:\Users\spk19\AppData\Local\Temp\testng-eclipse--1377109657\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1596000437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596000437'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
+in C:\Users\spk19\AppData\Local\Temp\testng-eclipse--1377109657\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.sample.frameworksetup.driverProgram@59f99ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.sample.frameworksetup.driverProgram.testing4()'><b>testing4</b><br>Test class: com.sample.frameworksetup.driverProgram<br/>
-<a href="#Output-390689829" onClick='toggleBox("Output-390689829", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-390689829" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-390689829">
-<br> <img src=C:\Users\spk19\git\newTestFramework\screenshots\testing41.png /> <br><br/>
-<br> <img src=C:\Users\spk19\git\newTestFramework\screenshots\testing42.png /> <br><br/>
-</div>
-</td>
+<td title='com.sample.frameworksetup.driverProgram.beforeTest()'><b>beforeTest</b><br>Test class: com.sample.frameworksetup.driverProgram</td>
 <td></td>
-<td>6</td>
-<td>com.sample.frameworksetup.driverProgram@51dcb805</td></tr>
+<td>0</td>
+<td>com.sample.frameworksetup.driverProgram@59f99ea</td></tr>
+<tr>
+<td title='com.sample.frameworksetup.driverProgram.beforeClass()'><b>beforeClass</b><br>Test class: com.sample.frameworksetup.driverProgram</td>
+<td></td>
+<td>0</td>
+<td>com.sample.frameworksetup.driverProgram@59f99ea</td></tr>
+<tr>
+<td title='com.sample.frameworksetup.driverProgram.beforeMethod()'><b>beforeMethod</b><br>Test class: com.sample.frameworksetup.driverProgram</td>
+<td></td>
+<td>0</td>
+<td>com.sample.frameworksetup.driverProgram@59f99ea</td></tr>
+<tr>
+<td title='com.sample.frameworksetup.driverProgram.afterClass()'><b>afterClass</b><br>Test class: com.sample.frameworksetup.driverProgram</td>
+<td></td>
+<td>0</td>
+<td>com.sample.frameworksetup.driverProgram@59f99ea</td></tr>
+<tr>
+<td title='com.sample.frameworksetup.driverProgram.afterTest()'><b>afterTest</b><br>Test class: com.sample.frameworksetup.driverProgram</td>
+<td></td>
+<td>0</td>
+<td>com.sample.frameworksetup.driverProgram@59f99ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sample.frameworksetup.driverProgram.countTestCases()'><b>countTestCases</b><br>Test class: com.sample.frameworksetup.driverProgram</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
+in C:\Users\spk19\AppData\Local\Temp\testng-eclipse--1377109657\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1815546035", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1815546035'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method beforeSuite but has not been marked @Optional or defined
+in C:\Users\spk19\AppData\Local\Temp\testng-eclipse--1377109657\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:326)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>com.sample.frameworksetup.driverProgram@59f99ea</td></tr>
 </table><p>
 </body>
 </html>
