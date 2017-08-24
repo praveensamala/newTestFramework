@@ -8,7 +8,7 @@
 	
 	<test name="test01">
 		<classes>
-			<class name="com.sample.frameworksetup.driverProgram"></class>
+			<class name="testProject.driverProgramTest"></class>
 		</classes>
 	</test>
 </suite>
