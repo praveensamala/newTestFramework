@@ -119,6 +119,14 @@ public class driverProgramTest
 		  
 		  driver.get("https://www.yahoo.com");
 		  
+		  List <WebElement> alltags = driver.findElements(By.tagName("li"));
+		   
+		  System.out.println("\nall tags size : "+alltags.size());
+		  System.out.println("all tags[0] : "+alltags.get(0).getText());
+		  
+		  String currentDir = System.getProperty("user.dir");
+	      System.out.println("\nCurrent dir using System: " +currentDir);
+	      
 		  /*screenShots screenshots = new screenShots();
 		  screenshots.getScreenShot("testing3", driver);
 		  screenshots.logScreenShot("testing3", driver);*/
